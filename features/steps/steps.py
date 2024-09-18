@@ -15,6 +15,7 @@ import os
 # Use apk_path in your setup when launching the app
 # Dynamically get APK path from the apk directory
 apk_path = os.path.join(os.getcwd(), "apk", "smmr1.apk")
+# options.app = apk_path
 
 
 @given('the app is launched')
@@ -23,12 +24,13 @@ def launch_app(context):
         options = UiAutomator2Options()
         options.platformName = "Android"
         options.platformVersion = "11.0"
-        options.deviceName = "Redmi 9"
-        options.noReset = True
+        options.deviceName = "realme 7i"
+        options.noReset = False
         # options.app = "C:\\Users\\HK\\Downloads\\smmr1.apk"
+        options.app = apk_path
         options.appPackage = "homeworkout.homeworkouts.noequipment"
         options.appActivity = "homeworkout.homeworkouts.noequipment.SplashActivity"
-        options.udid = "97a606d80406"
+        options.udid = "f852ebe"
         options.automationName = "UiAutomator2"
         options.newCommandTimeout = 120000
 

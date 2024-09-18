@@ -1,5 +1,5 @@
 #first run this command python setup_env.py for installation
 #2nd ryn behave command
-
+# appium==2.11.4
 behave==1.2.6
 selenium==4.24.0
